@@ -45,7 +45,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun AppGaleriaDeFotos(){
     LazyColumn(){
-        items(FonteDeDados().carregaListaMolduras()){
+        items(FonteDeDados().CarregaListaMolduras()){
             molduraImagemDescricao-> MolduraImagemDescricao(molduraImagemDescricao )
         }
     }
@@ -67,23 +67,4 @@ fun MolduraImagemDescricao(idImageDescricao: IdImageDescricao){
         }
         
     }
-}
-@Preview
-@Composable
-fun PreviewMoldura(){
-//    Column() {
-//
-//        MolduraImagemDescricao(idImagem = R.drawable.fotos2,
-//            idDescricao = R.string.descricaofoto2
-//        )
-//        MolduraImagemDescricao(idImagem = R.drawable.fots2a,
-//            idDescricao = R.string.descricaofoto2a
-//        )
-//        MolduraImagemDescricao(idImagem = R.drawable.fotos2b,
-//            idDescricao = R.string.descricaofoto2b
-//        )
-//        MolduraImagemDescricao(idImagem = R.drawable.fotos2c,
-//            idDescricao = R.string.descricaofoto2c
-//        )
-//    }
 }
